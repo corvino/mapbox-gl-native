@@ -17,7 +17,7 @@ VARIANT_VERSION=1.0
 function print_qt_flags {
     mason install qt system
 
-    CONFIG+="    'qt_cflags%': $(quote_flags $(mason cflags qt system "QtCore QtGui QtOpenGL QtNetwork QtSql")),"$LN
-    CONFIG+="    'qt_ldflags%': $(quote_flags $(mason ldflags qt system "QtCore QtGui QtOpenGL QtNetwork QtSql")),"$LN
-    CONFIG+="    'qt_moc%': '$(pkg-config QtCore --variable=moc_location)',"$LN
+    CONFIG+="    'qt_cflags%': $(quote_flags $(mason cflags qt system "Qt5Core Qt5Gui Qt5OpenGL Qt5Network Qt5Sql")),"$LN
+    CONFIG+="    'qt_ldflags%': $(quote_flags $(mason ldflags qt system "Qt5Core Qt5Gui Qt5OpenGL Qt5Network Qt5Sql")),"$LN
+    CONFIG+="    'qt_moc%': '${MASON_SYSROOT:=}/$(pkg-config Qt5Core --variable=host_bins)/moc',"$LN
 }
