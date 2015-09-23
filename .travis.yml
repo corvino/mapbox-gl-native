@@ -16,13 +16,13 @@ matrix:
       env: FLAVOR=linux CXX=clang++-3.5 BUILDTYPE=Debug
       addons:
         apt:
-          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise-3.5' ]
+          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise' ]
           packages: [ 'gdb', 'clang-3.5', 'libstdc++-4.9-dev', 'libstdc++6', 'libllvm3.4', 'xutils-dev', 'libxxf86vm-dev', 'x11proto-xf86vidmode-dev', 'mesa-utils' ]
     - os: linux
       env: FLAVOR=linux CXX=clang++-3.5 BUILDTYPE=Release
       addons:
         apt:
-          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise-3.5' ]
+          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise' ]
           packages: [ 'gdb', 'clang-3.5', 'libstdc++-4.9-dev', 'libstdc++6', 'libllvm3.4', 'xutils-dev', 'libxxf86vm-dev', 'x11proto-xf86vidmode-dev', 'mesa-utils' ]
     - os: osx
       osx_image: xcode7
@@ -62,19 +62,19 @@ matrix:
       env: FLAVOR=node CXX=clang++-3.5 BUILDTYPE=Release NODE_VERSION=iojs-v3
       addons:
         apt:
-          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise-3.5' ]
+          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise' ]
           packages: [ 'gdb', 'clang-3.5', 'libstdc++-4.9-dev', 'libstdc++6', 'libllvm3.4', 'xutils-dev', 'libxxf86vm-dev', 'x11proto-xf86vidmode-dev', 'mesa-utils' ]
     - os: linux
       env: FLAVOR=node CXX=clang++-3.5 BUILDTYPE=Release NODE_VERSION=0.12
       addons:
         apt:
-          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise-3.5' ]
+          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise' ]
           packages: [ 'gdb', 'clang-3.5', 'libstdc++-4.9-dev', 'libstdc++6', 'libllvm3.4', 'xutils-dev', 'libxxf86vm-dev', 'x11proto-xf86vidmode-dev', 'mesa-utils' ]
     - os: linux
       env: FLAVOR=node CXX=clang++-3.5 BUILDTYPE=Release NODE_VERSION=0.10
       addons:
         apt:
-          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise-3.5' ]
+          sources: [ 'ubuntu-toolchain-r-test', 'llvm-toolchain-precise' ]
           packages: [ 'gdb', 'clang-3.5', 'libstdc++-4.9-dev', 'libstdc++6', 'libllvm3.4', 'xutils-dev', 'libxxf86vm-dev', 'x11proto-xf86vidmode-dev', 'mesa-utils' ]
     - os: osx
       osx_image: xcode7
