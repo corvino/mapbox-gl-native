@@ -1,6 +1,6 @@
 [submodule ".mason"]
 	path = .mason
-	url = https://github.com/mapbox/mason.git
+	url = https://github.com/corvino/mason.git
 
 [submodule "styles"]
 	path = styles

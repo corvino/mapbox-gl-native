@@ -12,6 +12,8 @@ To build MapboxGL on a Mac you have to install a few dependencies:
 
 * [xcpretty](https://github.com/supermarin/xcpretty); can be installed with ```sudo gem install xcpretty```.
 * [appledoc](https://github.com/tomaz/appledoc); can be installed from homebrew with ```brew install appledoc```. Except it doesn't appear to be in homebrew at the moment, so clone, archive, and copy executable into path.
+* [automake](https://www.gnu.org/software/automake/); can be installed from homebrew with ```brew install automake```. Should install autoconf as a dependency.
+* [libtool](http://www.gnu.org/software/libtool/); can be installed from homebrew with ```brew install libtool```.
 
 # Status
 
